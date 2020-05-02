@@ -217,3 +217,27 @@ body {
   margin-left: 20px;
   font-weight: bold;
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background: #ccc;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 1px soldid black;
+}
+
+.column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  border: 1px solid black;
+}
