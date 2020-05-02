@@ -26,3 +26,30 @@ body {
 .header a:hover {
   color: #37c0fb;
 }
+
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+  background-color: #2e2e2e;
+  color: #c0c0c0;
+  font-size: 18px;
+}
+
+.navmenu ul li {
+  display: inline;
+  padding: 26px;
+}
+.navmenu ul li:hover {
+  color: white;
+  cursor: pointer;
+  font-style: bold;
+}
+
+.space {
+  height: 18px;
+  background-color: #37c0fb;
+}
