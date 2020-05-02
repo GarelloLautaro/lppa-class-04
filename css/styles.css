@@ -7,7 +7,6 @@ body {
   justify-content: center;
   text-align: center;
   height: 170px;
-  border: 1px solid black;
 }
 
 .header a {
@@ -131,4 +130,66 @@ body {
   font-weight: 400;
   color: #474747;
   text-align: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: #f4f4f4;
+}
+
+.title h2 {
+  font-size: 42px;
+  color: #474747;
+}
+
+.title p {
+  font-size: 28px;
+  color: #474747;
+  font-weight: 300;
+}
+
+.thing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  height: 40%;
+  margin: 30px 50px 20px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+}
+.text h3,
+.text p {
+  margin: 30px;
+  color: #474747;
+  margin: 20px 20px 24px;
+}
+.text p {
+  font-weight: 300;
+}
+
+.item .logo {
+  display: flex;
+  width: 30%;
+  height: 70%;
+}
+
+.logo img {
+  height: 150px;
+  width: 175px;
+  border-radius: 5px;
 }
