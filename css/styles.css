@@ -1,0 +1,26 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header a {
+  text-decoration: none;
+  display: flex;
+  font-size: 26px;
+  color: #474747;
+  margin: 10px;
+  font-style: bold;
+}
+.header h1 {
+  font-weight: 300;
+}
+
+.header a:hover,
+.header h1:hover {
+  color: #37c0fb;
+}
