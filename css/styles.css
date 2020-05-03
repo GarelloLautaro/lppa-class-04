@@ -346,6 +346,14 @@ footer .links a:hover {
   color: #37c0fb;
 }
 
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  border: 1px solid red;
+}
+
 /*MEDIA QUERYS*/
 
 @media (max-width: 900px) {
