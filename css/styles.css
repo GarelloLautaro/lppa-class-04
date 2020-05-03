@@ -125,11 +125,12 @@ body {
 
 .box p {
   margin: 30px;
-  padding: 0 30px 30px 30px;
-  font-family: 19px;
+  padding: 0 25px 30px 25px;
+  font-size: 19px;
   font-weight: 400;
   color: #474747;
   text-align: center;
+  font-weight: 300;
 }
 
 .title {
@@ -244,6 +245,105 @@ body {
   align-items: center;
   width: 50%;
   border: 1px solid black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #f1f1f1;
+}
+.sup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  width: 100%;
+}
+
+footer .contact {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 55vh;
+  background: #f1f1f1;
+}
+footer .form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 55vh;
+}
+
+.infor {
+  display: flex;
+  width: 40%;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+footer .form h3 {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 40px 0 20px 20px;
+}
+
+.msj {
+  display: flex;
+  align-items: start;
+  width: 84%;
+  height: 150px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.btn-send {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  color: red;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  background: #565656;
+  border-radius: 5px;
+}
+
+footer .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  text-align: end;
+}
+.inline {
+  display: flex;
+}
+
+footer .links h3 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+footer .links a,
+footer .links a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  border-bottom: 1px dashed #999;
+  font-size: 18px;
+}
+footer .links a:hover {
+  color: #37c0fb;
 }
 
 /*MEDIA QUERYS*/
