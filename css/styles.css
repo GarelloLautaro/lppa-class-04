@@ -350,10 +350,26 @@ footer .links a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45vh;
-  border: 1px solid red;
+  height: 15vh;
 }
 
+.social-media span {
+  display: flex;
+  margin: 15px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: #474747;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.copyright span {
+  margin: 20px;
+  color: #474949;
+}
 /*MEDIA QUERYS*/
 
 @media (max-width: 900px) {
