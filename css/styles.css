@@ -1,12 +1,18 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 170px;
+  width: 100vw;
 }
 
 .header a {
@@ -17,6 +23,12 @@ body {
   margin: 10px;
   font-style: bold;
 }
+
+.header p {
+  display: flex;
+  justify-content: center;
+}
+
 .header h1 {
   font-weight: 300;
 }
@@ -34,6 +46,7 @@ body {
   align-items: center;
   align-self: center;
   flex-wrap: wrap;
+  width: 100%;
   height: 100px;
   background-color: #2e2e2e;
   color: #c0c0c0;
@@ -44,6 +57,7 @@ body {
   display: inline;
   padding: 26px;
 }
+
 .navmenu ul li:hover {
   color: white;
   cursor: pointer;
@@ -71,7 +85,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100px;
-  width: 100%;
+  width: 100vw;
   color: white;
   background: black;
   background-color: rgba(0, 0, 0, 0.5);
@@ -81,6 +95,7 @@ body {
   font-family: 24px;
   font-weight: 300;
 }
+
 .overlay h2 span {
   font-weight: 500;
 }
@@ -104,9 +119,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  width: 100%;
+}
+.info .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 350px;
+  width: 400px;
+  margin-top: 20px;
 }
 
+.info .icon .logo {
+  display: flex;
+  justify-content: center;
+}
+.info .icon .logo img {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
 .box {
   display: flex;
   flex-direction: column;
@@ -115,19 +149,20 @@ body {
   width: 25%;
   height: 500px;
 }
+
 .box .img {
   margin: 50px 50px 0 50px;
 }
-.box h3 {
+
+.info .icon .titlee {
   font-size: 24px;
   color: #474747;
 }
 
-.box p {
+.info .icon .text {
   margin: 30px;
   padding: 0 25px 30px 25px;
   font-size: 19px;
-  font-weight: 400;
   color: #474747;
   text-align: center;
   font-weight: 300;
@@ -174,16 +209,18 @@ body {
   height: 40%;
   margin: 30px 50px 20px;
 }
+
 .text {
   display: flex;
   flex-direction: column;
 }
+
 .text h3,
 .text p {
-  margin: 30px;
   color: #474747;
   margin: 20px 20px 24px;
 }
+
 .text p {
   font-weight: 300;
 }
@@ -227,7 +264,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
   background: #ccc;
 }
 
@@ -260,7 +296,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55vh;
   width: 100%;
 }
 
@@ -275,9 +310,15 @@ footer .form {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 55vh;
 }
 
+.information {
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  width: 50%;
+  height: 500px;
+}
 .infor {
   display: flex;
   width: 40%;
@@ -308,7 +349,6 @@ footer .form h3 {
   justify-content: center;
   height: 50px;
   width: 200px;
-  color: red;
   margin: 10px;
   color: white;
   font-weight: bold;
@@ -324,7 +364,10 @@ footer .links {
   height: 100%;
   width: 25%;
   text-align: end;
+  margin-left: 20%;
+  margin-top: 60px;
 }
+
 .inline {
   display: flex;
 }
@@ -342,6 +385,7 @@ footer .links a:visited {
   border-bottom: 1px dashed #999;
   font-size: 18px;
 }
+
 footer .links a:hover {
   color: #37c0fb;
 }
@@ -370,26 +414,38 @@ footer .links a:hover {
   margin: 20px;
   color: #474949;
 }
-/*MEDIA QUERYS*/
 
 @media (max-width: 900px) {
-  body {
-    width: 100%;
-  }
   .navmenu {
     display: none;
   }
+
+  .boton {
+    display: flex;
+    align-items: center;
+  }
+
   .info {
     display: flex;
     flex-direction: column;
   }
-  .box {
-    width: 70%;
+  .overlay {
     display: flex;
     flex-direction: column;
+    align-self: center;
+    width: hidden;
+    height: 150px;
   }
-  .box .img {
+
+  .overlay h2 {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title h2 {
+    text-align: center;
   }
 
   .box p {
@@ -401,12 +457,14 @@ footer .links a:hover {
     color: #474747;
     text-align: center;
   }
+
   .thing {
     display: flex;
     height: 1000px;
     justify-content: center;
     margin-bottom: 50px;
   }
+
   .item {
     display: flex;
     flex-direction: column;
@@ -415,6 +473,7 @@ footer .links a:hover {
     width: 100%;
     height: 20%;
   }
+
   .text p {
     width: 60%;
     margin: 0;
@@ -423,5 +482,28 @@ footer .links a:hover {
 
   .ready {
     display: flex;
+    width: 100%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+
+  .sup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sup .information {
+    display: none;
   }
 }
